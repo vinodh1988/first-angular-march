@@ -3,10 +3,12 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InfoItemComponent } from './info-item/info-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent //components, directives, and pipes
+    AppComponent,
+    InfoItemComponent //components, directives, and pipes
   ],
   imports: [
     BrowserModule,
