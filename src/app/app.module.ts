@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent //components, directives, and pipes
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule //other modules needed by the app module
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration() //services defined in the app module
   ],
   bootstrap: [AppComponent]
 })
