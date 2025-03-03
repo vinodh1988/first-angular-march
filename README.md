@@ -1,27 +1,36 @@
-# Firstapp
+#### Angular Directives
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+A Directive is a custom element or attribute
+created by using angular
 
-## Development server
+There are three types of angular directives
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Component Directive
+* Structural Directive
+* Attribute Directive
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Component Directive
 
-## Build
+   The custom elements that you create is called component directive
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   Every component is actually called component directive
 
-## Running unit tests
+### Structural Directive
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Structural directives are custom attributes that could
+    be applied either for html elements or angular components
 
-## Running end-to-end tests
+    Structural directives when applied , it either generates
+    code,hides/unhides template
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    <li *ngFor="let x of ['apple','boy','çat']">{{x}}</li>
 
-## Further help
+    it would produce three list items
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    <div *ngIf="show"></div>
+
+    the above division will be shown if show is true will be hidden
+    if show is false
+
+    Note: structural directives are prefixed with *
