@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoItemComponent } from './info-item/info-item.component';
 import { FormsModule } from '@angular/forms';
+import { TopicBoxComponent } from './topic-box/topic-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfoItemComponent //components, directives, and pipes
+    InfoItemComponent,
+    TopicBoxComponent //components, directives, and pipes
   ],
   imports: [
     BrowserModule,
