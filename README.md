@@ -104,3 +104,26 @@ if name is 'Ganesh' by default the text box is filled with Ganesh
 
 and if you type the value in the text box the value you type is updated
 to name
+
+
+#### Communication b/w parent child components 
+ 
+ When ever we make angular components ,
+ the information flow must be unidirectional
+ that is from parent to child
+
+ even though there is possibility to pass info
+ from child to parent, unless it is really necassary avoid it
+
+# Parent to Child
+
+Child is the receiver
+Parent is the sender
+
+So the configuration must be done in receiver end(child)
+
+Whatever the child want to receive from parent
+it has to be declared as a variable and it must
+be decorated with @Input so that for that particular
+component that variable will become input attribute directive
+

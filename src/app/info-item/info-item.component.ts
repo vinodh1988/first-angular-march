@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, Input, PLATFORM_ID } from '@angular/core';
 import { OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ import { OnInit } from '@angular/core';
 })
 
   export class InfoItemComponent implements OnInit {
-    message: string = 'This is an info item';
+    @Input('msg') message: string = '';
     alertTypes: string[] = ['alert alert-primary', 'alert alert-secondary', 'alert alert-success', 
       'alert alert-danger', 'alert alert-warning', 'alert alert-info', 
       'alert alert-light', 'alert alert-dark'];
