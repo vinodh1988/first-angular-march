@@ -4,6 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InfoItemComponent } from './info-item/info-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { InfoItemComponent } from './info-item/info-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule //other modules needed by the app module
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration() //services defined in the app module

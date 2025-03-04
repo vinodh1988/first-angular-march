@@ -1,3 +1,7 @@
+<select [(ngModel)]="bootclass">
+    <option *ngFor="let item of alertTypes">{{item}}</option>
+</select>
+
 <div [ngClass]="bootclass" role="alert" (click)="handleClick()">
     {{message}}
 </div>

@@ -86,3 +86,21 @@ red is a value
 
   <button (click)="fun()"></button>
   <input type="text" (keyup)="fun()">
+
+### Input Output Directives 
+
+Input output directives works in two ways
+
+that is the directives receives the value from right and 
+changes the behavior of the target 
+
+and at the same time listens to the events on the target
+calls the value at the right or updates the value at right
+
+
+<input type="text" [(ngModel)]="name">
+
+if name is 'Ganesh' by default the text box is filled with Ganesh
+
+and if you type the value in the text box the value you type is updated
+to name
