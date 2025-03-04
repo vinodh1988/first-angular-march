@@ -74,3 +74,15 @@ mycolor is a variable
 <h1 color="red"> </h1>
 
 red is a value
+
+### Output Directive
+
+
+  output directive are applied on elements(html/components)
+  if applied they listen to a particular even on the target
+  upon event it will call the function mentioned as the value
+
+  Output directives are enclosed within ()
+
+  <button (click)="fun()"></button>
+  <input type="text" (keyup)="fun()">

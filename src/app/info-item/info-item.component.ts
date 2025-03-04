@@ -25,4 +25,10 @@ import { OnInit } from '@angular/core';
      ,10000)
     }
   }
+
+  handleClick() {
+    const currentIndex = this.alertTypes.indexOf(this.bootclass);
+    const nextIndex = (currentIndex + 1) % this.alertTypes.length;
+    this.bootclass = this.alertTypes[nextIndex];
+  }
   }
