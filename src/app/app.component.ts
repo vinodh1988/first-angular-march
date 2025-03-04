@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   appname = 'My App'
   name= 'Angular';	
+  selectedProduct: string = '';
   products: string[] = [
     'Laptop',
     'Smartphone',
@@ -47,4 +48,9 @@ export class AppComponent {
     "First, solve the problem. Then, write the code. - John Johnson",
     "Experience is the name everyone gives to their mistakes. - Oscar Wilde"
   ];
+
+
+  receiveProduct(product: string) {
+    this.selectedProduct = product;
+  }
 }

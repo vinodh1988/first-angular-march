@@ -8,11 +8,19 @@
   </div>
 </div>
 
+<div class="alert alert-primary" role="alert">
+   The Last selected product is : {{selectedProduct}}
+</div>
+
+
 <div class="p-3 mb-4 bg-primary text-white rounded-3" style="overflow: hidden;">
   <div class="container-fluid py-3">
     <h2 class="display-5">Products</h2>
     <div class="col-md-8 fs-4">
-       <app-topic-box *ngFor="let x of products" [pname]="x"></app-topic-box>  
+       <app-topic-box *ngFor="let x of products"
+        [pname]="x"
+        (send)="receiveProduct($event)"
+        ></app-topic-box>  
     </div>
   </div>
 </div>

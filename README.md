@@ -127,3 +127,13 @@ it has to be declared as a variable and it must
 be decorated with @Input so that for that particular
 component that variable will become input attribute directive
 
+# Child to parent
+
+Child is sender
+parent is receiver
+
+In this case also child component will have the configuration
+
+In the child component create
+a variable of type event emitter and decorate with @output
+
